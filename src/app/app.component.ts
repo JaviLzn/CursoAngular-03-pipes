@@ -15,4 +15,14 @@ export class AppComponent {
 
  salario = 1234.5;
 
+ heroe = {
+   nombre: 'Logan',
+   clave: 'Wolverine',
+   edad: 500,
+   direccion: {
+     calle: 'primera',
+     casa: 19
+   }
+ };
+
 }
