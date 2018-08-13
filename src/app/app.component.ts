@@ -32,4 +32,9 @@ export class AppComponent {
  });
 
  fecha = new Date();
+
+ video = '53VePsJUG4o';
+
+ activar = true;
+
 }

@@ -126,6 +126,13 @@
                 <td> titlecase </td>
                 <td>{{ nombre2 | titlecase }} </td>
             </tr>
+            <tr>
+                <td>{{ nombre }}</td>
+                <td> contrasena:{{activar}}
+                    <button type="button" class="btn btn-outline-primary btn-block" (click)="activar = !activar">Activar/Desactivar</button>
+                </td>
+                <td>{{ nombre | contrasena:activar }} </td>
+            </tr>
         </tbody>
     </table>
 
@@ -137,6 +144,10 @@
     </ul>
     <h3>JSON</h3>
     <pre>{{ heroe | json }}</pre>
+
+    <h3>Youtube</h3>
+    <hr>
+    <iframe width="997" height="561" [src]=" video | domseguro:'https://www.youtube.com/embed/'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 </div>
 
