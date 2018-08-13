@@ -73,18 +73,18 @@
             </tr>
             <tr>
                 <td>{{ salario }}</td>
-                <td>currency:'EUR':true </td>
-                <td>{{ salario | currency:'EUR':true }} </td>
+                <td>currency:'EUR':'code' </td>
+                <td>{{ salario | currency:'EUR':'code' }} </td>
             </tr>
             <tr>
                 <td>{{ salario }}</td>
-                <td>currency:'EUR':false </td>
-                <td>{{ salario | currency:'EUR':false }} </td>
+                <td>currency:'CAD':'symbol' </td>
+                <td>{{ salario | currency:'CAD':'symbol' }} </td>
             </tr>
             <tr>
                 <td>{{ salario }}</td>
-                <td>currency:'EUR':false:'4.0-0' </td>
-                <td>{{ salario | currency:'EUR':false:'4.0-0' }} </td>
+                <td>currency:'USD':'symbol-narrow':'4.0-0' </td>
+                <td>{{ salario | currency:'USD':'symbol-narrow':'4.0-0' }} </td>
             </tr>
             <tr>
                 <td>{{ salario }}</td>
@@ -110,6 +110,11 @@
                 <td>{{ fecha }}</td>
                 <td>date:'MMMM - dd' </td>
                 <td>{{ fecha | date:'MMMM - dd' }} </td>
+            </tr>
+            <tr>
+                <td>{{ nombre2 }}</td>
+                <td> capitalizado </td>
+                <td>{{ nombre2 | capitalizado }} </td>
             </tr>
         </tbody>
     </table>
